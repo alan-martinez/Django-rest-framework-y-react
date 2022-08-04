@@ -14,7 +14,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
- 
+//Function to see if a word is palindrome
 
 function NavBar(){
     return (
@@ -77,15 +77,15 @@ function NavBar(){
                   </Popover.Button>
                 </div>
                 <div className="hidden lg:flex lg:items-center lg:justify-end xl:col-span-4">
-                  <NavLink to="/blog" className={`text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold`}>
+                  <NavLink to="/blog" className="text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold">
                         Blog
-                  </NavLink>
-                  <NavLink to="/about" className={`mx-4 text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold`}>
+                    </NavLink>
+                    <NavLink to="/about" className="mx-4 text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold">
                         About
-                  </NavLink>
-                  <NavLink to="/contact" className={`text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold`}>
+                    </NavLink>
+                    <NavLink to="/contact" className="text-lg dark:hover:text-white hover:text-gray-900 text-gray-600 dark:text-dark-txt text-md font-semibold">
                         Contact
-                  </NavLink>
+                    </NavLink>
                 </div>
               </div>
             </div>
