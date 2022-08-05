@@ -7,14 +7,9 @@ import BlogCard from "./BlogCard";
 
 function BlogList({
     blog_list,
-    get_blog_list,
     get_blog_list_page,
     count
 }){
-
-    useEffect(()=>{
-        get_blog_list()
-    },[])
 
     return (
         <div>
@@ -50,11 +45,9 @@ function BlogList({
 }
 
 const mapStateToProps = state => ({
-    blog_list: state.blog.blog_list,
-    count: state.blog.count
+
 });
 
 export default connect(mapStateToProps, {
-    get_blog_list,
-    get_blog_list_page
+    
 })(BlogList);
